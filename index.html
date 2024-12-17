@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四択クイズ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
+
+    
+    
+</head>
+<body>
+    
+    <div class="video-background">
+        <video autoplay loop muted id="background-video">
+            <source src="copy_FE73D1EE-A72D-4FC7-AE7E-90C2AED8B2AE.mov" type="video/mp4">
+            お使いのブラウザは動画をサポートしていません。
+        </video>
+    </div>
+
+    <div class="quiz-container">
+        <h1>四択クイズ</h1>
+        <div class="question-container">
+            <p id="timer">10</p>
+            <p id="question-text">質問はここに表示されます。</p>
+            <div id="options">
+                <!-- 選択肢がJavaScriptで動的に挿入されます -->
+            </div>
+        </div>
+        <p id="result-message"></p>
+    </div>
+
+    <p id="result-message"></p>
+    <!-- ランキング表示エリア -->
+    <div id="ranking-container" style="display: none;">
+        <h2>ランキング</h2>
+        <ul id="ranking-list">
+            <!-- ランキングのリストがここに表示されます -->
+        </ul>
+        
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
