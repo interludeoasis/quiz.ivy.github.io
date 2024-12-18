@@ -92,6 +92,12 @@ function loadQuestion() {
     optionsContainer.innerHTML = "";
     clearInterval(timer); // 前のタイマーをクリア
     timeLeft = 10;
+    
+    // タイマーのアニメーションリセット
+    timerDisplay.style.animation = "none"; // 一度アニメーションを無効化
+    void timerDisplay.offsetWidth; // リセット
+    timerDisplay.style.animation = "fadeTimer 10s linear"; // アニメーションを再適用
+ 
 
     // 現在のクイズデータ
     const currentQuiz = quizData[currentQuestion];
